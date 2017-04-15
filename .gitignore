@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/School/Infrastructure.Utils/bin/Debug
+/School/Infrastructure.Utils/obj/Debug
+/School/packages
+/School/Schoo.Management.Domain.Contracts/bin/Debug
+/School/Schoo.Management.Domain.Contracts/obj/Debug
+/School/Schoo.Management.Domain.Entities/bin/Debug
+/School/Schoo.Management.Domain.Entities/obj/Debug
+/School/Schoo.Management.Infrastructure.DataAccess/bin/Debug
+/School/Schoo.Management.Infrastructure.DataAccess/obj/Debug
