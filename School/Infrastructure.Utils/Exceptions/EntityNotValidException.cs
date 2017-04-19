@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Exceptions
+namespace Infrastructure.Utils.Exceptions
 {
     public class EntityNotValidException:Exception
     {

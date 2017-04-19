@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Entity
+namespace Infrastructure.Utils.Domain.Entity
 {
     public class EntityBase:IDataErrorInfo
     {
@@ -52,7 +52,8 @@ namespace Race.Infrastructure.CrossCutting.Utils.Domain.Entity
                 var results = new List<System.ComponentModel.DataAnnotations.ValidationResult>();
                 //try
                 //{
-                var itm = this.GetType().GetProperties().Where(x => x.Name == columnName).SingleOrDefault();
+                var itm = this.GetType().GetProperties()
+                    .SingleOrDefault(x => x.Name == columnName);
                 if (itm.CanWrite)
                 {
                     var isValid = Validator.TryValidateProperty(itm.GetValue(this, null), context, results);

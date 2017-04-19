@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core
+namespace Infrastructure.Utils.Domain.Core
 {
     /// <summary>
     /// Allow Query Features

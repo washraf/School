@@ -7,7 +7,7 @@ using System.ServiceModel.Configuration;
 using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
 
-namespace Race.Infrastructure.CrossCutting.Utils.WCF.MEF
+namespace Infrastructure.Utils.WCF.MEF
 {
     public class MefEndpointBehavior : BehaviorExtensionElement, IEndpointBehavior
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification
+namespace Infrastructure.Utils.Domain.Core.Specification
 {
     /// <summary>
     /// Helper for rebinder parameters without use Invoke method in expressions 

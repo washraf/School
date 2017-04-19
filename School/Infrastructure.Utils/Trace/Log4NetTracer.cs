@@ -12,7 +12,7 @@ using log4net.Config;
 using log4net.Layout;
 using log4net.Repository.Hierarchy;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Trace
+namespace Infrastructure.Utils.Trace
 {
 
     [Export(typeof(ITracer))]

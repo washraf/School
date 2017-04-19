@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification
+namespace Infrastructure.Utils.Domain.Core.Specification
 {
     /// <summary>
     /// Extension methods for add And and Or with parameters rebinder

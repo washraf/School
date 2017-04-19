@@ -3,7 +3,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification
+namespace Infrastructure.Utils.Domain.Core.Specification
 {
     /// <summary>
     /// NotEspecification convert a original specification with NOT logic operator

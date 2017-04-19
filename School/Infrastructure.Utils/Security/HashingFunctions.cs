@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Security
+namespace Infrastructure.Utils.Security
 {
     public class HashingFunctions
     {

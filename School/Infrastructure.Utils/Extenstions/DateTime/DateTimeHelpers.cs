@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Race.Infrastructure.CrossCutting.Utils.Extenstions.String;
+using Infrastructure.Utils.Extenstions.String;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Extenstions.DateTime
+namespace Infrastructure.Utils.Extenstions.DateTime
 {
     public static class DateTimeHelpers
     {

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core
+namespace Infrastructure.Utils.Domain.Core
 {
     /// <summary>
     /// Unit of Work Implementation

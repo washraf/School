@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using log4net;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Trace
+namespace Infrastructure.Utils.Trace
 {
     public interface ITracer
     {

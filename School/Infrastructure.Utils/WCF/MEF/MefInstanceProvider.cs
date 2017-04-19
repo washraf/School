@@ -10,7 +10,7 @@ using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Dispatcher;
 
-namespace Race.Infrastructure.CrossCutting.Utils.WCF.MEF
+namespace Infrastructure.Utils.WCF.MEF
 {
     public class MefInstanceProvider : IInstanceProvider
     {

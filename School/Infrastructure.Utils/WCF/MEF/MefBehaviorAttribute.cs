@@ -6,7 +6,7 @@ using System;
 using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
 
-namespace Race.Infrastructure.CrossCutting.Utils.WCF.MEF
+namespace Infrastructure.Utils.WCF.MEF
 {
     public class MefBehaviorAttribute : Attribute, IContractBehavior, IContractBehaviorAttribute
     {

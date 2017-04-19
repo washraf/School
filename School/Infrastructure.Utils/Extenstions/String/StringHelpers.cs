@@ -5,9 +5,9 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Race.Infrastructure.CrossCutting.Utils.Extenstions.EnumExtensions;
+using Infrastructure.Utils.Extenstions.EnumExtensions;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Extenstions.String
+namespace Infrastructure.Utils.Extenstions.String
 {
     public static class StringHelpers
     {

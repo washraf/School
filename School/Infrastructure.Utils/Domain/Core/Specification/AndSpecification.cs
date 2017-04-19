@@ -2,7 +2,7 @@
 using System.Linq.Expressions;
 using System.Runtime.Serialization;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification
+namespace Infrastructure.Utils.Domain.Core.Specification
 {
     /// <summary>
     /// A logic AND Specification

@@ -11,7 +11,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace Race.Infrastructure.CrossCutting.Utils.MVC.MEF
+namespace Infrastructure.Utils.MVC.MEF
 {
     //public static class MefMvcConfig
     //{

@@ -1,7 +1,7 @@
 ﻿using System.Runtime.Serialization;
 using System;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification
+namespace Infrastructure.Utils.Domain.Core.Specification
 {
     /// <summary>
     /// Base class for composite specifications

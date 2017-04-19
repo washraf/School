@@ -5,7 +5,6 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Race.Infrastructure.CrossCutting.Utils.Data.Core;
 using Schoo.Management.Domain.Entities;
 using Schoo.Management.Infrastructure.DataAccess.UnitOfWork;
 

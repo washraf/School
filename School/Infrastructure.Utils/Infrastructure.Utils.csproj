@@ -67,7 +67,6 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Data\Core\IQueryableUnitOfWork.cs" />
     <Compile Include="Data\Core\Repository.cs" />
-    <Compile Include="Data\EntityBase.cs" />
     <Compile Include="Domain\Core\IRepository.cs" />
     <Compile Include="Domain\Core\ISQL.cs" />
     <Compile Include="Domain\Core\IUnitOfWork.cs" />
@@ -82,6 +81,11 @@
     <Compile Include="Domain\Core\Specification\Specification.cs" />
     <Compile Include="Domain\Core\Specification\TrueSpecification.cs" />
     <Compile Include="Domain\Entity\EntityBase.cs" />
+    <Compile Include="Events\DefualtEventDispatcher.cs" />
+    <Compile Include="Events\DomainEvent.cs" />
+    <Compile Include="Events\IDomainEvent.cs" />
+    <Compile Include="Events\IDomainHandler.cs" />
+    <Compile Include="Events\IEventDispatcher.cs" />
     <Compile Include="Exceptions\EntityNotValidException.cs" />
     <Compile Include="Extenstions\DateTime\DateTimeHelpers.cs" />
     <Compile Include="Extenstions\EnumExtensions\EnumHelpers.cs" />

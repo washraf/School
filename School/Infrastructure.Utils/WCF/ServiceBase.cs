@@ -3,11 +3,11 @@ using System.ComponentModel.Composition;
 using System.Security.Permissions;
 using System.ServiceModel;
 using System.Transactions;
+using Infrastructure.Utils.Trace;
+using Infrastructure.Utils.WCF.MEF;
 
-using Race.Infrastructure.CrossCutting.Utils.Trace;
-using Race.Infrastructure.CrossCutting.Utils.WCF.MEF;
 
-namespace Race.Infrastructure.CrossCutting.Utils.WCF
+namespace Infrastructure.Utils.WCF
 {
     /// <summary>
     /// <attribute name="MefBehavior">

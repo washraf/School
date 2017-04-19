@@ -11,3 +11,10 @@
 /School/Schoo.Management.Domain.Entities/obj/Debug
 /School/Schoo.Management.Infrastructure.DataAccess/bin/Debug
 /School/Schoo.Management.Infrastructure.DataAccess/obj/Debug
+/School/Schoo.Management.Application.Contracts/obj/Debug
+/School/Schoo.Management.Application.Implementation/obj/Debug
+/School/Schoo.Management.Domain.Entities.Tests/bin/Debug
+/School/Schoo.Management.Domain.Entities.Tests/obj/Debug
+/School/School.FullData/obj/Debug
+/School/School.Management.Services.Contracts/obj/Debug
+/School/School.Management.Services.Implementation/obj/Debug

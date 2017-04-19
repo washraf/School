@@ -4,9 +4,9 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
-using Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification;
+using Infrastructure.Utils.Domain.Core.Specification;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Domain.Core
+namespace Infrastructure.Utils.Domain.Core
 {
     /// <summary>
     /// This is the Basic Interface for all the Repositories that will exist in our solutoin

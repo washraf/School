@@ -6,7 +6,7 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Extenstions.EnumExtensions
+namespace Infrastructure.Utils.Extenstions.EnumExtensions
 {
     public class EnumRepresentation
     {

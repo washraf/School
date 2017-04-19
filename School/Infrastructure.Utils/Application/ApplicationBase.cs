@@ -6,9 +6,9 @@ using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
 using System.Transactions;
-using Race.Infrastructure.CrossCutting.Utils.Trace;
+using Infrastructure.Utils.Trace;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Application
+namespace Infrastructure.Utils.Application
 {
     public class ApplicationBase
     {

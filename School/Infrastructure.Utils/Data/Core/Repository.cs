@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 using log4net;
 using log4net.Core;
-using Race.Infrastructure.CrossCutting.Utils.Domain.Core;
-using Race.Infrastructure.CrossCutting.Utils.Domain.Core.Specification;
-using Race.Infrastructure.CrossCutting.Utils.Trace;
 using System.Reflection;
 using System.Collections;
 using System.Data.Entity.Core.Objects.DataClasses;
 using System.Data.Entity.Infrastructure;
+using Infrastructure.Utils.Domain.Core;
+using Infrastructure.Utils.Domain.Core.Specification;
+using Infrastructure.Utils.Trace;
 
-namespace Race.Infrastructure.CrossCutting.Utils.Data.Core
+namespace Infrastructure.Utils.Data.Core
 {
     public abstract class Repository<TEntity>:IRepository<TEntity> where TEntity:class
     {
