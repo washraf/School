@@ -183,8 +183,10 @@ namespace Infrastructure.Utils.Data.Core
 
 
         public virtual IEnumerable<TEntity> GetFilteredElements<S>(
-            System.Linq.Expressions.Expression<Func<TEntity, bool>> filter, int pageIndex, int pageCount,
-            System.Linq.Expressions.Expression<Func<TEntity, S>> orderByExpression, bool ascending)
+            System.Linq.Expressions.Expression<Func<TEntity, bool>> filter,
+            int pageIndex, int pageCount,
+            System.Linq.Expressions.Expression<Func<TEntity, S>> orderByExpression,
+            bool ascending)
         {
             _tracer.LogInfo("Get Filtered Elements and Sort called");
 

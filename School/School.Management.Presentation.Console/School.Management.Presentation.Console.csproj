@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3ECB3679-5144-49D3-B641-0D4382C45FC4}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{A55BFA50-BAFA-4F28-933B-719E90BE21D0}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schoo.Management.Infrastructure.DataAccess</RootNamespace>
-    <AssemblyName>Schoo.Management.Infrastructure.DataAccess</AssemblyName>
+    <RootNamespace>School.Management.Presentation.Console</RootNamespace>
+    <AssemblyName>School.Management.Presentation.Console</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -49,25 +52,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Context\ManagementContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UnitOfWork\IManagementUnitOfWork.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\Infrastructure.Utils\Infrastructure.Utils.csproj">
       <Project>{17ABB20F-7FFB-439A-89AC-111B979780AC}</Project>
       <Name>Infrastructure.Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Schoo.Management.Domain.Entities\Schoo.Management.Domain.Entities.csproj">
-      <Project>{D409CB49-45AE-47AD-A38E-5EAC33F52528}</Project>
-      <Name>Schoo.Management.Domain.Entities</Name>
+    <ProjectReference Include="..\Schoo.Management.Application.Contracts\School.Management.Application.Contracts.csproj">
+      <Project>{78A0FA4E-82F1-4D9A-A2BF-E3126AE23A99}</Project>
+      <Name>School.Management.Application.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Application.Implementation\School.Management.Application.Implementation.csproj">
+      <Project>{C4590E3F-A582-4F50-8064-F74FFD036A88}</Project>
+      <Name>School.Management.Application.Implementation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Domain.Contracts\School.Management.Domain.Contracts.csproj">
+      <Project>{3D666CFD-D1C5-453D-8AF5-4020EA67F351}</Project>
+      <Name>School.Management.Domain.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Infrastructure.DataAccess\School.Management.Infrastructure.DataAccess.csproj">
+      <Project>{3ECB3679-5144-49D3-B641-0D4382C45FC4}</Project>
+      <Name>School.Management.Infrastructure.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

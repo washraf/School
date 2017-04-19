@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Infrastructure.Utils.Domain.Entity;
 
-namespace Schoo.Management.Domain.Entities
+namespace School.Management.Domain.Entities
 {
-    public class Course
+    public class Course:EntityBase
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]

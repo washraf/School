@@ -6,8 +6,8 @@
     <ProjectGuid>{DE4DD87A-C142-43C6-8BE8-EB251CA4CDC0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schoo.Management.Domain.Entities.Tests</RootNamespace>
-    <AssemblyName>Schoo.Management.Domain.Entities.Tests</AssemblyName>
+    <RootNamespace>School.Management.Domain.Entities.Tests</RootNamespace>
+    <AssemblyName>School.Management.Domain.Entities.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="StudentTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,9 +58,9 @@
       <Project>{17ABB20F-7FFB-439A-89AC-111B979780AC}</Project>
       <Name>Infrastructure.Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Schoo.Management.Domain.Entities\Schoo.Management.Domain.Entities.csproj">
+    <ProjectReference Include="..\Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj">
       <Project>{D409CB49-45AE-47AD-A38E-5EAC33F52528}</Project>
-      <Name>Schoo.Management.Domain.Entities</Name>
+      <Name>School.Management.Domain.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

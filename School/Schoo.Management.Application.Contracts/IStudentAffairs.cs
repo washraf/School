@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Schoo.Management.Domain.Entities;
+using School.Management.Domain.Contracts;
+using School.Management.Domain.Entities;
 
-namespace Schoo.Management.Application.Implementation
+namespace School.Management.Application.Contracts
 {
     public interface IStudentAffairs
     {
@@ -15,6 +16,7 @@ namespace Schoo.Management.Application.Implementation
         void RemoveStudent(Student student);
         List<Student> GetStudentsByName(string name);
         Student GetStudentById(int id);
-
+        void RegisterToCourse(int studentId, int courseId);
+        
     }
 }

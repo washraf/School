@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Application\ApplicationBase.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Data\Core\IQueryableUnitOfWork.cs" />
     <Compile Include="Data\Core\Repository.cs" />
     <Compile Include="Domain\Core\IRepository.cs" />
@@ -81,6 +80,11 @@
     <Compile Include="Domain\Core\Specification\Specification.cs" />
     <Compile Include="Domain\Core\Specification\TrueSpecification.cs" />
     <Compile Include="Domain\Entity\EntityBase.cs" />
+    <Compile Include="Domain\Resources\StudentValidationMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentValidationMessages.resx</DependentUpon>
+    </Compile>
     <Compile Include="Events\DefualtEventDispatcher.cs" />
     <Compile Include="Events\DomainEvent.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
@@ -104,6 +108,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Domain\Resources\StudentValidationMessages.ar.resx" />
+    <EmbeddedResource Include="Domain\Resources\StudentValidationMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StudentValidationMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

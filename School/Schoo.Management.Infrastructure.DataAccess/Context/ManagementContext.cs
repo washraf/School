@@ -5,13 +5,17 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Schoo.Management.Domain.Entities;
-using Schoo.Management.Infrastructure.DataAccess.UnitOfWork;
+using School.Management.Domain.Entities;
+using School.Management.Infrastructure.DataAccess.UnitOfWork;
 
-namespace Schoo.Management.Infrastructure.DataAccess.Context
+namespace School.Management.Infrastructure.DataAccess.Context
 {
     public class ManagementContext:DbContext,IManagementUnitOfWork
     {
+        public ManagementContext():base("DefaultConnection")
+        {
+            
+        }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
 

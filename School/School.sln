@@ -39,23 +39,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infrastructure", "5 - I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Utils", "Infrastructure.Utils\Infrastructure.Utils.csproj", "{17ABB20F-7FFB-439A-89AC-111B979780AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Infrastructure.DataAccess", "Schoo.Management.Infrastructure.DataAccess\Schoo.Management.Infrastructure.DataAccess.csproj", "{3ECB3679-5144-49D3-B641-0D4382C45FC4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Infrastructure.DataAccess", "Schoo.Management.Infrastructure.DataAccess\School.Management.Infrastructure.DataAccess.csproj", "{3ECB3679-5144-49D3-B641-0D4382C45FC4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Domain.Entities", "Schoo.Management.Domain.Entities\Schoo.Management.Domain.Entities.csproj", "{D409CB49-45AE-47AD-A38E-5EAC33F52528}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Domain.Entities", "Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj", "{D409CB49-45AE-47AD-A38E-5EAC33F52528}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Domain.Contracts", "Schoo.Management.Domain.Contracts\Schoo.Management.Domain.Contracts.csproj", "{3D666CFD-D1C5-453D-8AF5-4020EA67F351}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Domain.Contracts", "Schoo.Management.Domain.Contracts\School.Management.Domain.Contracts.csproj", "{3D666CFD-D1C5-453D-8AF5-4020EA67F351}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Domain.Entities.Tests", "Schoo.Management.Domain.Entities.Tests\Schoo.Management.Domain.Entities.Tests.csproj", "{DE4DD87A-C142-43C6-8BE8-EB251CA4CDC0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Domain.Entities.Tests", "Schoo.Management.Domain.Entities.Tests\School.Management.Domain.Entities.Tests.csproj", "{DE4DD87A-C142-43C6-8BE8-EB251CA4CDC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Application.Contracts", "Schoo.Management.Application.Contracts\Schoo.Management.Application.Contracts.csproj", "{78A0FA4E-82F1-4D9A-A2BF-E3126AE23A99}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Application.Contracts", "Schoo.Management.Application.Contracts\School.Management.Application.Contracts.csproj", "{78A0FA4E-82F1-4D9A-A2BF-E3126AE23A99}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schoo.Management.Application.Implementation", "Schoo.Management.Application.Implementation\Schoo.Management.Application.Implementation.csproj", "{C4590E3F-A582-4F50-8064-F74FFD036A88}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Application.Implementation", "Schoo.Management.Application.Implementation\School.Management.Application.Implementation.csproj", "{C4590E3F-A582-4F50-8064-F74FFD036A88}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.FullData", "School.FullData\School.FullData.csproj", "{7B0C6DAF-EB0F-4921-97CD-E8233B5C6EB8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Services.Contracts", "School.Management.Services.Contracts\School.Management.Services.Contracts.csproj", "{9394ABDB-51C0-4457-A0B1-E6141A83C770}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Services.Implementation", "School.Management.Services.Implementation\School.Management.Services.Implementation.csproj", "{991787BD-9352-4011-8F19-50DF4165F997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "School.Management.Presentation.Console", "School.Management.Presentation.Console\School.Management.Presentation.Console.csproj", "{A55BFA50-BAFA-4F28-933B-719E90BE21D0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -103,6 +105,10 @@ Global
 		{991787BD-9352-4011-8F19-50DF4165F997}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{991787BD-9352-4011-8F19-50DF4165F997}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{991787BD-9352-4011-8F19-50DF4165F997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A55BFA50-BAFA-4F28-933B-719E90BE21D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A55BFA50-BAFA-4F28-933B-719E90BE21D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A55BFA50-BAFA-4F28-933B-719E90BE21D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A55BFA50-BAFA-4F28-933B-719E90BE21D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -130,5 +136,6 @@ Global
 		{7B0C6DAF-EB0F-4921-97CD-E8233B5C6EB8} = {3C138ACF-601F-4D63-ABE7-D5B6DE0880E6}
 		{9394ABDB-51C0-4457-A0B1-E6141A83C770} = {FB06EE33-B6BD-47EA-9C9D-449EFA2F0E5A}
 		{991787BD-9352-4011-8F19-50DF4165F997} = {FB06EE33-B6BD-47EA-9C9D-449EFA2F0E5A}
+		{A55BFA50-BAFA-4F28-933B-719E90BE21D0} = {CA0E5F29-280C-4723-B71B-781F6429D9DB}
 	EndGlobalSection
 EndGlobal

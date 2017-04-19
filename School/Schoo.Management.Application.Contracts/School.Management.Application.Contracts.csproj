@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C4590E3F-A582-4F50-8064-F74FFD036A88}</ProjectGuid>
+    <ProjectGuid>{78A0FA4E-82F1-4D9A-A2BF-E3126AE23A99}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Schoo.Management.Application.Implementation</RootNamespace>
-    <AssemblyName>Schoo.Management.Application.Implementation</AssemblyName>
+    <RootNamespace>School.Management.Application.Contracts</RootNamespace>
+    <AssemblyName>School.Management.Application.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -48,9 +48,13 @@
       <Project>{17ABB20F-7FFB-439A-89AC-111B979780AC}</Project>
       <Name>Infrastructure.Utils</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Schoo.Management.Domain.Entities\Schoo.Management.Domain.Entities.csproj">
+    <ProjectReference Include="..\Schoo.Management.Domain.Contracts\School.Management.Domain.Contracts.csproj">
+      <Project>{3D666CFD-D1C5-453D-8AF5-4020EA67F351}</Project>
+      <Name>School.Management.Domain.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj">
       <Project>{D409CB49-45AE-47AD-A38E-5EAC33F52528}</Project>
-      <Name>Schoo.Management.Domain.Entities</Name>
+      <Name>School.Management.Domain.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

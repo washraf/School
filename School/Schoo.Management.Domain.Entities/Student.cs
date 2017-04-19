@@ -7,18 +7,21 @@ using System.Text;
 using System.Threading.Tasks;
 using Infrastructure.Utils.Domain.Entity;
 
-namespace Schoo.Management.Domain.Entities
+namespace School.Management.Domain.Entities
 {
-    public class Student:EntityBase
+  
+
+public class Student : EntityBase
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessageResourceName = "Name", ErrorMessageResourceType = typeof(Infrastructure.Utils.Domain.Resources.StudentValidationMessages))]
+        // [RegularExpression("\\w\\d")]
         public string Name { get; set; }
         [EmailAddress]
         public string Email { get; set; }
-        [Range(5,18)]
+        [Range(5, 18)]
         public int Age { get; set; }
         public virtual ICollection<Course> Courses { get; set; }
 
@@ -27,5 +30,14 @@ namespace Schoo.Management.Domain.Entities
             Courses = new HashSet<Course>();
         }
 
+        public override bool IsValid
+        {
+            get { return base.IsValid && this.Name != "Hamada"; }
+        }
+
+        public void Register(Course course)
+        {
+            Courses.Add(course);
+        }
     }
 }
