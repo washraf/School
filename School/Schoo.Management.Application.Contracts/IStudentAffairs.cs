@@ -10,13 +10,13 @@ namespace School.Management.Application.Contracts
 {
     public interface IStudentAffairs
     {
-        void CreateStudent(Student student);
-        void UpdateStudent(Student student);
+        bool CreateStudent(Student student);
+        bool UpdateStudent(Student student);
 
-        void RemoveStudent(Student student);
+        bool RemoveStudent(Student student);
         List<Student> GetStudentsByName(string name);
         Student GetStudentById(int id);
-        void RegisterToCourse(int studentId, int courseId);
+        bool RegisterToCourse(int studentId, int courseId);
         
     }
 }

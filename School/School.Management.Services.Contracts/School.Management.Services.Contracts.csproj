@@ -32,6 +32,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,6 +43,16 @@
   <ItemGroup>
     <Compile Include="IStudentAffairsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Utils\Infrastructure.Utils.csproj">
+      <Project>{17ABB20F-7FFB-439A-89AC-111B979780AC}</Project>
+      <Name>Infrastructure.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj">
+      <Project>{D409CB49-45AE-47AD-A38E-5EAC33F52528}</Project>
+      <Name>School.Management.Domain.Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

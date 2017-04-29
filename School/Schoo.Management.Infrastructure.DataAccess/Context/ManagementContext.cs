@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -10,6 +11,8 @@ using School.Management.Infrastructure.DataAccess.UnitOfWork;
 
 namespace School.Management.Infrastructure.DataAccess.Context
 {
+    [Export(typeof(IManagementUnitOfWork))]
+    [PartCreationPolicy(CreationPolicy.Shared)]
     public class ManagementContext:DbContext,IManagementUnitOfWork
     {
         public ManagementContext():base("DefaultConnection")

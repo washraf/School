@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="86893b3f-71a0-4bd3-8a6a-c79b3b1432c4" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StudentAffairsService.disco" MetadataType="Disco" ID="1d46a683-ee2f-4310-8b56-42a377350632" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?disco" />
+    <MetadataFile FileName="StudentAffairsService.xsd" MetadataType="Schema" ID="832d8030-eaf4-4f23-b8cc-355eb8ed7941" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?xsd=xsd4" />
+    <MetadataFile FileName="StudentAffairsService.wsdl" MetadataType="Wsdl" ID="1434edc7-bc42-4911-a7f6-aa0ffd383961" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?wsdl" />
+    <MetadataFile FileName="StudentAffairsService1.xsd" MetadataType="Schema" ID="acae5986-0fc3-4b52-8218-e981a8316259" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?xsd=xsd3" />
+    <MetadataFile FileName="StudentAffairsService2.xsd" MetadataType="Schema" ID="5baeec79-3419-4936-a382-a324f7342105" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?xsd=xsd2" />
+    <MetadataFile FileName="StudentAffairsService3.xsd" MetadataType="Schema" ID="ef2a7989-2366-408c-b44a-93f682403cd5" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?xsd=xsd1" />
+    <MetadataFile FileName="StudentAffairsService4.xsd" MetadataType="Schema" ID="eb49576e-b89a-427c-980a-b249de9e6dc7" SourceId="1" SourceUrl="http://localhost/School.Management.Services.IISHosting/StudentAffairsService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

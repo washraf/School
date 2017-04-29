@@ -40,7 +40,7 @@ namespace Infrastructure.Utils.WCF
         }
        
         [OperationBehavior(TransactionScopeRequired = true)]
-        [PrincipalPermission(SecurityAction.Demand,Role = @"Start\Walid")]
+        //[PrincipalPermission(SecurityAction.Demand,Name = @"eng_walid_ashraf@hotmail.com")]
         protected virtual T ExecuteTransactional<T>(Func<T> codetoExecute)
         {
             try

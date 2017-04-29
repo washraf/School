@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,33 +10,41 @@ using School.Management.Domain.Entities;
 
 namespace School.Management.Application.Implementation
 {
+    [Export(typeof(IStudentAffairs))]
+    [PartCreationPolicy(CreationPolicy.NonShared)]
     public class StudentAffairs: IStudentAffairs
     {
         private readonly IStudentRepository _studentRepository;
         private readonly ICourseRepository _courseRepository;
-
+        [ImportingConstructor]
         public StudentAffairs(IStudentRepository studentRepository,ICourseRepository courseRepository)
         {
             _studentRepository = studentRepository;
             _courseRepository = courseRepository;
         }
 
-        public void CreateStudent(Student student)
+        public bool CreateStudent(Student student)
         {
             if (student.IsValid)
                 _studentRepository.Add(student);
+            return true;
+
         }
 
-        public void UpdateStudent(Student student)
+        public bool UpdateStudent(Student student)
         {
             if (student.IsValid)
                 _studentRepository.Modify(student);
+            return true;
+
         }
 
-        public void RemoveStudent(Student student)
+        public bool RemoveStudent(Student student)
         {
             if (student.IsValid)
                 _studentRepository.Remove(student);
+            return true;
+
         }
 
         public List<Student> GetStudentsByName(string name)
@@ -49,7 +58,7 @@ namespace School.Management.Application.Implementation
 
         }
 
-        public void RegisterToCourse(int studentId, int courseId)
+        public bool RegisterToCourse(int studentId, int courseId)
         {
            var course =  _courseRepository.GetFilteredElements(x => x.Id == courseId).SingleOrDefault();
             var student = _studentRepository.GetFilteredElements(x => x.Id == studentId).SingleOrDefault();
@@ -59,7 +68,7 @@ namespace School.Management.Application.Implementation
             }
             _studentRepository.Modify(student);
 
-
+            return true;
         }
     }
 }

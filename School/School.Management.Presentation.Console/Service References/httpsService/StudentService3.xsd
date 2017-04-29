@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/School.Management.Domain.Entities" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/School.Management.Domain.Entities" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://start/School.Management.Services.IISHTTPS/StudentService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Infrastructure.Utils.Domain.Entity" />
+  <xs:complexType name="Student">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Infrastructure.Utils.Domain.Entity" base="q1:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Age" type="xs:int" />
+          <xs:element minOccurs="0" name="Courses" nillable="true" type="tns:ArrayOfCourse" />
+          <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Student" nillable="true" type="tns:Student" />
+  <xs:complexType name="ArrayOfCourse">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Course" nillable="true" type="tns:Course" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCourse" nillable="true" type="tns:ArrayOfCourse" />
+  <xs:complexType name="Course">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Infrastructure.Utils.Domain.Entity" base="q2:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ClassRoom" nillable="true" type="tns:ClassRoom" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Instructors" nillable="true" type="tns:ArrayOfInstructor" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Students" nillable="true" type="tns:ArrayOfStudent" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Course" nillable="true" type="tns:Course" />
+  <xs:complexType name="ClassRoom">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q3="http://schemas.datacontract.org/2004/07/Infrastructure.Utils.Domain.Entity" base="q3:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Courses" nillable="true" type="tns:ArrayOfCourse" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="ClassRoom" nillable="true" type="tns:ClassRoom" />
+  <xs:complexType name="ArrayOfInstructor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Instructor" nillable="true" type="tns:Instructor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfInstructor" nillable="true" type="tns:ArrayOfInstructor" />
+  <xs:complexType name="Instructor">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Infrastructure.Utils.Domain.Entity" base="q4:EntityBase">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Courses" nillable="true" type="tns:ArrayOfCourse" />
+          <xs:element minOccurs="0" name="Id" type="xs:int" />
+          <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="Instructor" nillable="true" type="tns:Instructor" />
+  <xs:complexType name="ArrayOfStudent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Student" nillable="true" type="tns:Student" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfStudent" nillable="true" type="tns:ArrayOfStudent" />
+</xs:schema>

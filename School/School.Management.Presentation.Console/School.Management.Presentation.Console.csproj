@@ -44,6 +44,9 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Discovery" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,10 +57,65 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\CustomerService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\httpsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\StudentAffairsService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\School.Management.Domain.Entities.Student.datasource" />
+    <None Include="Service References\CustomerService\NormalService.wsdl" />
+    <None Include="Service References\CustomerService\NormalService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\CustomerService\NormalService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\httpsService\StudentService.wsdl" />
+    <None Include="Service References\httpsService\StudentService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\httpsService\StudentService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\httpsService\StudentService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\httpsService\StudentService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\httpsService\StudentService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService.wsdl" />
+    <None Include="Service References\StudentAffairsService\StudentAffairsService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService4.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Infrastructure.Utils\Infrastructure.Utils.csproj">
@@ -76,10 +134,75 @@
       <Project>{3D666CFD-D1C5-453D-8AF5-4020EA67F351}</Project>
       <Name>School.Management.Domain.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj">
+      <Project>{d409cb49-45ae-47ad-a38e-5eac33f52528}</Project>
+      <Name>School.Management.Domain.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Schoo.Management.Infrastructure.DataAccess\School.Management.Infrastructure.DataAccess.csproj">
       <Project>{3ECB3679-5144-49D3-B641-0D4382C45FC4}</Project>
       <Name>School.Management.Infrastructure.DataAccess</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ٍSchool.Management.Services.DiscoverableService\School.Management.Services.DiscoverableService.csproj">
+      <Project>{A4043F0D-3E16-40F4-9E76-25D85A80AF46}</Project>
+      <Name>School.Management.Services.DiscoverableService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ٍSchool.Management.Services.Router\School.Management.Services.Router.csproj">
+      <Project>{786f1d25-9717-4895-a338-768ff140fed2}</Project>
+      <Name>School.Management.Services.Router</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\CustomerService\" />
+    <WCFMetadataStorage Include="Service References\httpsService\" />
+    <WCFMetadataStorage Include="Service References\StudentAffairsService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StudentAffairsService\StudentAffairsService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StudentAffairsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StudentAffairsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\StudentAffairsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\httpsService\StudentService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\httpsService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\httpsService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\httpsService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\NormalService.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\CustomerService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

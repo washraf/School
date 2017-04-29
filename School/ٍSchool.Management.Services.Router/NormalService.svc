@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="School.Management.Services.Router.NormalService" CodeBehind="NormalService.svc.cs" %>

@@ -83,7 +83,15 @@ namespace Infrastructure.Utils.WCF.MEF
         private static void Compose()
         {
             var catalog = new AggregateCatalog();
-            catalog.Catalogs.Add(new DirectoryCatalog(@".\bin","*.dll")); //Extensions
+            try
+            {
+                catalog.Catalogs.Add(new DirectoryCatalog(@".\bin", "*.dll")); //Extensions
+
+            }
+            catch (Exception)
+            {
+                catalog.Catalogs.Add(new DirectoryCatalog(@".", "*.dll")); //Extensions
+            }
             Container = new CompositionContainer(catalog);
         }
 

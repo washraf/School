@@ -31,7 +31,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +46,18 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Utils\Infrastructure.Utils.csproj">
+      <Project>{17ABB20F-7FFB-439A-89AC-111B979780AC}</Project>
+      <Name>Infrastructure.Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Application.Contracts\School.Management.Application.Contracts.csproj">
+      <Project>{78A0FA4E-82F1-4D9A-A2BF-E3126AE23A99}</Project>
+      <Name>School.Management.Application.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Schoo.Management.Domain.Entities\School.Management.Domain.Entities.csproj">
+      <Project>{D409CB49-45AE-47AD-A38E-5EAC33F52528}</Project>
+      <Name>School.Management.Domain.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\School.Management.Services.Contracts\School.Management.Services.Contracts.csproj">
       <Project>{9394ABDB-51C0-4457-A0B1-E6141A83C770}</Project>
       <Name>School.Management.Services.Contracts</Name>

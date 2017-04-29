@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,12 @@ using School.Management.Infrastructure.DataAccess.UnitOfWork;
 
 namespace School.Management.Infrastructure.DataAccess.Repositories
 {
-    public class StudentRepository:Repository<Student>,IStudentRepository
+    [Export(typeof(IStudentRepository))]
+    [PartCreationPolicy(CreationPolicy.NonShared)]
+    public class StudentRepository:Repository<Student>,
+        IStudentRepository
     {
+        [ImportingConstructor]
         public StudentRepository(IManagementUnitOfWork unitOfWork, ITracer tracer) 
             : base(unitOfWork, tracer)
         {
